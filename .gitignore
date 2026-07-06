@@ -14,21 +14,31 @@
 !Atlas/README.md
 !Atlas/AGENTS.md
 !Atlas/dir-metadata.md
+!Atlas/Concepts/
+!Atlas/Concepts/README.md
+!Atlas/Concepts/Personality of Iain McGilchrist.md
+!Atlas/Concepts/Left hemisphere of the brain.md
+!Atlas/Concepts/Right hemisphere of the brain.md
+!Atlas/Concepts/McGilchrist - The Divided Brain.md
+!Atlas/Maps/
+!Atlas/Maps/README.md
+!Atlas/Maps/Second Brain Operating Model.md
 !Atlas/Profession/
-!Atlas/Profession/FISHR/
-!Atlas/Profession/FISHR/README.md
-!Atlas/Profession/WaterLily/
-!Atlas/Profession/WaterLily/README.md
+!Atlas/Profession/ExampleProject/
+!Atlas/Profession/ExampleProject/README.md
 !Atlas/Utilities/
+!Atlas/Utilities/AI/
+!Atlas/Utilities/AI/README.md
+!Atlas/Utilities/AI/Vault triage case law.md
+!Atlas/Utilities/AI/Combined working methodology.md
+!Atlas/Utilities/AI/skills/
+!Atlas/Utilities/AI/skills/**
 !Atlas/Utilities/Templates/
 !Atlas/Utilities/Templates/Templater/
-!Atlas/Utilities/Templates/Templater/FISHR daily log.md
-!Atlas/Utilities/Templates/Templater/FISHR run note.md
-!Atlas/Utilities/Templates/Templater/FISHR weekly digest.md
-!Atlas/Utilities/Templates/Templater/FISHR shareable status brief.md
-!Atlas/Utilities/Templates/Templater/WaterLily daily log.md
-!Atlas/Utilities/Templates/Templater/WaterLily run note.md
-!Atlas/Utilities/Templates/Templater/WaterLily weekly digest.md
+!Atlas/Utilities/Templates/Templater/Project daily log.md
+!Atlas/Utilities/Templates/Templater/Project run note.md
+!Atlas/Utilities/Templates/Templater/Project weekly digest.md
+!Atlas/Utilities/Templates/Templater/Project shareable status brief.md
 !Atlas/Utilities/Bases/
 !Atlas/Utilities/Bases/README.md
 !Atlas/Utilities/Bases/cleanup.base
@@ -41,10 +51,6 @@
 !Timeline/dir-metadata.md
 !Timeline/Logs/
 !Timeline/Logs/profession/
-!Timeline/Logs/profession/FISHR/
-!Timeline/Logs/profession/FISHR/README.md
-!Timeline/Logs/profession/WaterLily/
-!Timeline/Logs/profession/WaterLily/README.md
 !Timeline/Plans/
 !Timeline/Plans/README.md
 
@@ -52,11 +58,12 @@
 !Efforts/README.md
 !Efforts/AGENTS.md
 !Efforts/dir-metadata.md
+!Efforts/Ongoing/
+!Efforts/Ongoing/README.md
+!Efforts/Ongoing/The right-left-right approach.md
 !Efforts/profession/
-!Efforts/profession/FISHR-WaterLily-VISION/
-!Efforts/profession/FISHR-WaterLily-VISION/README.md
-!Efforts/profession/WaterLily-VISION/
-!Efforts/profession/WaterLily-VISION/README.md
+!Efforts/profession/ExampleProject/
+!Efforts/profession/ExampleProject/README.md
 
 !Supplementary/
 !Supplementary/README.md
@@ -68,10 +75,8 @@
 !Research/AGENTS.md
 !Research/dir-metadata.md
 !Research/profession/
-!Research/profession/FISHR/
-!Research/profession/FISHR/README.md
-!Research/profession/WaterLily/
-!Research/profession/WaterLily/README.md
+!Research/profession/ExampleProject/
+!Research/profession/ExampleProject/README.md
 
 !Worlds/
 !Worlds/README.md
@@ -83,14 +88,12 @@
 !Worlds/ResearchGroups/
 !Worlds/ResearchGroups/README.md
 !Worlds/ResearchGroups/AGENTS.md
-!Worlds/ResearchGroups/FurthLab/
-!Worlds/ResearchGroups/FurthLab/README.md
-!Worlds/ResearchGroups/FurthLab/AGENTS.md
-!Worlds/ResearchGroups/FurthLab/Projects/
-!Worlds/ResearchGroups/FurthLab/Projects/FISHR/
-!Worlds/ResearchGroups/FurthLab/Projects/FISHR/README.md
-!Worlds/ResearchGroups/FurthLab/Projects/WaterLily-VISION/
-!Worlds/ResearchGroups/FurthLab/Projects/WaterLily-VISION/README.md
+!Worlds/ResearchGroups/ExampleGroup/
+!Worlds/ResearchGroups/ExampleGroup/README.md
+!Worlds/ResearchGroups/ExampleGroup/AGENTS.md
+!Worlds/ResearchGroups/ExampleGroup/Projects/
+!Worlds/ResearchGroups/ExampleGroup/Projects/ExampleProject/
+!Worlds/ResearchGroups/ExampleGroup/Projects/ExampleProject/README.md
 !Worlds/Shared-drive-packets/
 !Worlds/Shared-drive-packets/README.md
 !Worlds/Illustrations/
@@ -98,10 +101,8 @@
 !Worlds/Staging/
 !Worlds/Staging/README.md
 !Worlds/Presentable/Research/
-!Worlds/Presentable/Research/FISHR/
-!Worlds/Presentable/Research/FISHR/README.md
-!Worlds/Presentable/Research/WaterLily/
-!Worlds/Presentable/Research/WaterLily/README.md
+!Worlds/Presentable/Research/ExampleProject/
+!Worlds/Presentable/Research/ExampleProject/README.md
 
 # Always ignore generated/noisy/private areas
 .github/
@@ -112,9 +113,6 @@
 Supplementary/on-drive/
 Supplementary/in-sync/
 .DS_Store
-
-
-
 
 # Ignore Smart Environment folder
 .smart-env

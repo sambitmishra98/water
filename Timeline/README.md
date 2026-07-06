@@ -165,7 +165,7 @@ Examples of dispersion:
 - A recurring health symptom can later seed a health-pattern note while this note remains the dated evidence.
 - A concrete task can become a dated reminder in `Timeline` or active work in `Efforts`.
 - A stable location, movie, tool, or concept can become an `Atlas` anchor.
-- A raw snippet under `### ExampleProject`, `### ExampleProject`, `### PyFR`, thesis, postdoc, or advisor-meeting headings can seed or update the relevant profession so-far note or specialized log.
+- A raw snippet under a project-name or meeting-type heading (e.g. `### ExampleProject`, `### Advisor meeting`) can seed or update the relevant profession so-far note or specialized log.
 
 ## Daily Timeline-note goals
 

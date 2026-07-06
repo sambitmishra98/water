@@ -43,12 +43,8 @@ If a local rule appears to conflict with a parent rule, flag it for human review
 | `markdown-style-audit.sh` | Audits Markdown note style. |
 | `context-pack.sh` | Creates a compressed context pack for LLM review. |
 | `run-standard-audits.sh` | Runs the common audits on a target folder. |
-| `audit_supplementary.sh` | Audits the Supplementary tree without opening every private file. |
-| `audit_vault_readme_agents.sh` | Audits README/AGENTS coverage under a selected root. |
-| `audit_whole_vault_hubs.sh` | Finds candidate hub directories across the vault. |
-| `cleanup_old_dot_dir_metadata.sh` | Deletes old `.dir-metadata.md` files only when run in apply mode. |
-| `export_llm_context.sh` | Exports README/AGENTS files into a compact context folder. |
-| `setup_furth_lab_obsidian.sh` | Builds a Furth Lab vault `.obsidian` copy from whitelisted settings. |
-| `setup_furth_lab_obsidian_safe.sh` | Safer Furth Lab vault `.obsidian` setup with reduced plugin state. |
-| `setup_laptop_governance_git.sh` | Initializes or updates a lightweight governance Git layer on laptop. |
-| `write_dir_metadata.sh` | Writes generated directory metadata beside README/AGENTS files. |
+| `agents-inheritance-pack.sh` | Packs the AGENTS.md inheritance chain for a folder into a compact context bundle. |
+| `readme-inheritance-pack.sh` | Packs the README.md inheritance chain for a folder into a compact context bundle. |
+| `governance-pack.sh` | Bundles the README and AGENTS inheritance packs for a folder into one governance pack. |
+| `desktop-attachments-sync-audit.sh` | Audits Desktop, attachments, and sync settings for orphaned or misconfigured files. |
+| `supplementary-boundary-audit.sh` | Audits Supplementary's expected `in-sync`/`on-drive` boundary structure. |

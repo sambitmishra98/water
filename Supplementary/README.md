@@ -133,7 +133,7 @@ Heavy professional material belongs under:
 
 `Supplementary/on-drive/profession`
 
-This includes meshes, PyFR simulations, postprocessed files, software, recordings, conference material, and raw research evidence.
+This includes simulation inputs/outputs, postprocessed files, software, recordings, conference material, and raw research evidence.
 
 Research notes should link to this material.
 
@@ -149,7 +149,7 @@ Do not copy large professional artifacts into `Research`, `Atlas`, or `Efforts`.
 
 ## ExampleProject archive rule
 
-- Omar's received ExampleProject/ExampleProject archives and raw simulation outputs belong in Desktop `Supplementary/on-drive` or an external archive.
+- Externally received ExampleProject archives and raw simulation outputs belong in Desktop `Supplementary/on-drive` or an external archive.
 - Keep only manifests and links in `Research`, `Efforts`, `Atlas`, `Timeline`, and `Worlds`.
 - Suggested archive roots are listed in [[Efforts/profession/ExampleProject/Supplementary-manifest]].
 
@@ -243,15 +243,13 @@ Do not invent dates.
 
 ## Current state
 
-`Supplementary` is functional but not fully organized.
+Expect this folder to be functional but not fully organized in practice.
 
-Most data is under `Supplementary/on-drive`.
+Most data ends up under `Supplementary/on-drive` (large research/professional
+archives) or `Supplementary/in-sync` (files a sync tool keeps current).
 
-The largest archive is professional PyFR and Pointwise data.
-
-A raw Calendar archive already exists under `Supplementary/on-drive/Calendar`.
-
-Some areas are legacy dumps and should not grow by accident.
+Some areas will accumulate as legacy dumps; audit and prune them
+deliberately rather than letting them grow by accident.
 
 ## Known risks
 
