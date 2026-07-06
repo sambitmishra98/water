@@ -13,7 +13,8 @@ of it* with craft; the reflect banks what actually happened.
 ## Step 0 — The nudge (always first)
 
 Check that today's descent actually ran. It lives in the daily note under a
-`## Morning descent` heading (user's format, 2026-07-06):
+`## Morning descent` heading (see the Daily note scaffold in
+`Atlas/Utilities/Templates/`):
 
     grep -l "## Morning descent" Timeline/Timeline/$(date +%Y-%m-%d).md
 
@@ -26,7 +27,7 @@ Check that today's descent actually ran. It lives in the daily note under a
   what the morning said would move.
 
 Also read, briefly:
-- `Efforts/Ongoing/Inbox thread map 2026-07.md` (or current month's map) — thread states
+- The current thread map under `Efforts/Ongoing/`, if one exists — thread states
 - The tail of `Atlas/Utilities/AI/Session ledger.md` — what recent sessions did,
   so this one continues rather than repeats
 
@@ -61,7 +62,8 @@ sprawling onward.
 Before ending:
 
 1. Append to the session block in the daily note `Timeline/Timeline/YYYY-MM-DD.md`,
-   in the user's dialogue format (reference: 2026-07-06 note): a `### Session`
+   in the dialogue format (scaffold: `Atlas/Utilities/Templates/Daily note
+   scaffold.md`): a `### Session`
    heading (h3) after the last `- - -` divider, holding a running dialogue:
    `- Me: <the user's ask, in their words>` then `- C: <one or two plain
    sentences answering it>`. Detail beyond those sentences goes in a

@@ -10,7 +10,7 @@ up:
 
 It stores durable concepts, maps, references, definitions, templates, and reusable intellectual structure.
 
-This roughly matches what [[Nick]] means by Atlas.
+This roughly matches what Nick Milo means by Atlas in his ACE framework.
 
 ## Inheritance
 
@@ -25,7 +25,7 @@ If a local rule appears to conflict with a parent rule, flag it for human review
 ## What belongs here
 
 - Stable concepts developed by others, tested over years.
-- Evergreen reference notes, such as [[Jesus|Christ]] or [[Discontinuous spectral element methods|DSEM]].
+- Evergreen reference notes: people, concepts, methods, tools.
 - Durable maps and navigation notes.
 - People anchors for all people the user knows of, stored under `Atlas/People`.
 - Stable self-model anchors and consolidations under `Atlas/Me`.
@@ -43,14 +43,18 @@ If a local rule appears to conflict with a parent rule, flag it for human review
 
 ## Important entry points
 
-- [[Atlas/Maps]]
-- [[Atlas/Me]]
-- [[Atlas/Concepts]]
-- [[Atlas/People]]
-- [[Atlas/Profession]]
-- [[Atlas/Things]]
-- [[Atlas/Tools]]
-- [[Atlas/Utilities/Templates]]
+Present in this template:
+
+- [[Atlas/Maps]] — compact navigation maps (starts with the Second Brain Operating Model)
+- [[Atlas/Concepts]] — durable concept notes
+- [[Atlas/Me]] — stable self-model anchors
+- [[Atlas/Profession]] — stable professional/project knowledge
+- `Atlas/Utilities/AI` — skills, case law, ledger, bootstrap
+- `Atlas/Utilities/Templates` — note scaffolds
+- `Atlas/Utilities/Terminal-automations` — audit scripts
+
+Create as your content needs them: `Atlas/People`, `Atlas/Things`,
+`Atlas/Tools`.
 
 ## Relationship to nearby directories
 
@@ -63,13 +67,10 @@ If a local rule appears to conflict with a parent rule, flag it for human review
 | `Worlds` | Holds public-facing narratives; Atlas holds the reusable knowledge behind them. |
 | `Supplementary` | Holds large evidence, files, PDFs, datasets, binaries, and archives. |
 
-## Current state
+## Standing target
 
-`Atlas` is useful but not clean.
-Target rule: no active work-in-progress notes should live here.
-Current risk: some notes may still be developing ideas rather than durable references.
-`Atlas/Notes` should be dismantled.
-Its files should be moved into clearer locations.
+Target rule: no active work-in-progress notes should live here; when one is
+found, propose relocation rather than moving it.
 `Atlas/Maps` is the compact navigation layer for the vault.
 Directory governance belongs in README and AGENTS files; maps should point to those files instead of replacing them.
 
@@ -83,6 +84,6 @@ Directory governance belongs in README and AGENTS files; maps should point to th
 
 ## Known instability
 
-`Supplementary` is not synced with Obsidian Sync.
-It may be unstable when accessed from the SSD pendrive.
+`Supplementary` is typically excluded from any note-sync layer and may not be
+present on every machine; do not assume it exists on a given clone.
 Keep `Atlas` lightweight enough that it can be zipped and given to an LLM.

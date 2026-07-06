@@ -129,9 +129,11 @@ An LLM working in this repository should:
 
 ## Getting started with this template
 
+- On a fresh clone (any machine, including a cluster login node), walk the checklist in `Atlas/Utilities/AI/Fresh clone bootstrap.md` — or start an LLM session from this directory and ask it to bootstrap.
+- Notes you write stay untracked by default: `.gitignore` ignores everything except the framework's own files, so `git push` cannot leak personal content, and `git pull` brings framework updates without touching your notes.
+- Claude Code skills ship ready: `.claude/skills/` symlinks into the durable source at `Atlas/Utilities/AI/skills/` (second-brain retrieval discipline, plus the morning-descent / session / evening-reflect daily triad).
 - Read through `Atlas/Profession/ExampleProject/`, `Efforts/profession/ExampleProject/`, `Research/profession/ExampleProject/`, and `Worlds/Presentable/Research/ExampleProject/` to see one project threaded through every layer, then rename or delete it.
 - Write your own content policy here (what belongs in this repository, how much of it an LLM may author directly, how outside information gets attributed) — this template does not prescribe one.
-- Add a philosophical or operating-principles section if useful to you; none is prescribed here.
 - Run the audits under `Atlas/Utilities/Terminal-automations/` to check the repository's current structural health at any point.
 
 ## Known risks

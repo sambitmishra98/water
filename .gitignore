@@ -5,9 +5,19 @@
 !README.md
 !AGENTS.md
 !CLAUDE.md
+!LICENSE
 !dir-metadata.md
 !.gitignore
 !Home.md
+
+# Keep the inbox stub
+!+/
+!+/README.md
+
+# Keep Claude skill symlinks (targets live in Atlas/Utilities/AI/skills/)
+!.claude/
+!.claude/skills/
+!.claude/skills/**
 
 # Keep governance/script directories
 !Atlas/
@@ -31,9 +41,12 @@
 !Atlas/Utilities/AI/README.md
 !Atlas/Utilities/AI/Vault triage case law.md
 !Atlas/Utilities/AI/Combined working methodology.md
+!Atlas/Utilities/AI/Session ledger.md
+!Atlas/Utilities/AI/Fresh clone bootstrap.md
 !Atlas/Utilities/AI/skills/
 !Atlas/Utilities/AI/skills/**
 !Atlas/Utilities/Templates/
+!Atlas/Utilities/Templates/Daily note scaffold.md
 !Atlas/Utilities/Templates/Templater/
 !Atlas/Utilities/Templates/Templater/Project daily log.md
 !Atlas/Utilities/Templates/Templater/Project run note.md

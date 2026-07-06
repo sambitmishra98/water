@@ -10,6 +10,9 @@ Read these before making structural claims or editing files:
 2. AGENTS.md
 3. The README.md and AGENTS.md nearest the folder you are about to touch
 
+On a fresh clone or a new machine, also read
+Atlas/Utilities/AI/Fresh clone bootstrap.md and walk its checklist.
+
 ## Vault root
 
 This repository's root directory (wherever it has been cloned; no fixed path is assumed).
@@ -29,7 +32,7 @@ Other conventions:
 - +/ = inbox and raw capture, triaged into the five layers above
 - Supplementary/ = heavy files, raw evidence, datasets, media, private archives (never scanned casually, see Safety)
 - .llm-context/ = generated reports and temporary LLM context, safe to regenerate or delete
-- Atlas/Utilities/AI/ = the place to add your own retrieval tooling, skills, and LLM-facing protocols as you build them; empty by default in this template
+- Atlas/Utilities/AI/ = durable AI-collaboration material: reusable skills (skills/, symlinked from .claude/skills/), triage precedents (Vault triage case law.md), the working-methodology living doc, the append-only Session ledger.md, and Fresh clone bootstrap.md. Add your own retrieval tooling here as you build it.
 
 ## Mode gate
 
@@ -51,7 +54,12 @@ Default order (works anywhere, including cluster login nodes with no extra
 tooling installed):
 
 1. Keyword search:
-   rg -i "<keywords>" . --glob "*.md" --glob "!Supplementary/**" --glob "!.git/**" --glob "!.llm-context/**"
+   rg -i --no-ignore-vcs "<keywords>" . --glob "*.md" --glob "!Supplementary/**" --glob "!.git/**" --glob "!.llm-context/**"
+
+   --no-ignore-vcs is required. This vault's root .gitignore ignores
+   everything by default (personal notes are untracked by design), and rg
+   respects .gitignore, so without the flag rg silently finds only the
+   template's own governance files and none of the user's notes.
 
 2. Governance check:
    read the nearest README.md and AGENTS.md for any folder being discussed.
@@ -68,12 +76,14 @@ search above as the fallback for exact names and strings the embeddings miss.
 - Preserve frontmatter and Obsidian links.
 - Prefer reports and proposed changes over mutation.
 - If making edits, show changed files and summarize exactly what changed.
-- Before a session that will edit or delete many notes, take your own backup
-  (git commit, a filesystem snapshot, or a copy) since personal note content
-  is typically gitignored by design (see .gitignore) and has no other undo.
-- Keep an append-only session log of what was observed, decided, and applied
-  if you want a durable audit trail across sessions (see the Combined working
-  methodology pattern this template's author uses, documented separately).
+- Before any session that will edit or delete notes, take a snapshot:
+  Atlas/Utilities/Terminal-automations/vault-snapshot.sh
+  (hard-linked rsync snapshots; personal note content is gitignored by design
+  and has no other undo).
+- After applying changes in a working session, append what was observed →
+  decided → applied to Atlas/Utilities/AI/Session ledger.md (append-only).
+- Before classifying lint/triage findings, read
+  Atlas/Utilities/AI/Vault triage case law.md and follow its precedents.
 
 ## Adapting this template
 

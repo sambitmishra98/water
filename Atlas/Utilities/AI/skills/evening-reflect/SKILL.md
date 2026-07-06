@@ -19,12 +19,11 @@ not what it was supposed to be.
 
 ## First reads
 
-1. Today's Now note(s): `Timeline/Timeline/YYYY-MM-DD_*.md`. The morning brief
-   lives inside the Now note after a divider marked "created by
-   morning-descent" (user decision 2026-07-06); there is no separate briefs
-   folder.
-3. `Timeline/AGENTS.md` (percolation and open-loop rules — binding here)
-4. `Atlas/Concepts/Personality of Iain McGilchrist.md` (voice for the closing reflection)
+1. Today's daily note `Timeline/Timeline/YYYY-MM-DD.md` (the morning brief
+   lives there under `## Morning descent`; there is no separate briefs
+   folder) plus any timestamped Now notes `YYYY-MM-DD_*.md`.
+2. `Timeline/AGENTS.md` (percolation and open-loop rules — binding here)
+3. `Atlas/Concepts/Personality of Iain McGilchrist.md` (voice for the closing reflection)
 
 ## Step 1 — Gather the day's evidence
 
@@ -69,8 +68,9 @@ Per `Timeline/AGENTS.md`, all of this is proposed, confirmed, then applied:
 ## Step 4 — Release
 
 Append the closing block to the daily note `Timeline/Timeline/YYYY-MM-DD.md`,
-after the last `- - -` divider, in the user's format (reference: 2026-07-06
-note): a `## Evening reflect` heading; the user's own closing words (if they
+after the last `- - -` divider, in the standard format (scaffold:
+`Atlas/Utilities/Templates/Daily note scaffold.md`): a `## Evening reflect`
+heading; the user's own closing words (if they
 dictate any) stand plain in the body with a `^evening-YYMMDD` block id; ALL
 LLM-written content goes inside a `>[!LLM]+ ### LLM` callout, quoted with `>`,
 `####` subheadings (What the day was / Carried / Banked / Released), prose not

@@ -48,3 +48,4 @@ If a local rule appears to conflict with a parent rule, flag it for human review
 | `governance-pack.sh` | Bundles the README and AGENTS inheritance packs for a folder into one governance pack. |
 | `desktop-attachments-sync-audit.sh` | Audits Desktop, attachments, and sync settings for orphaned or misconfigured files. |
 | `supplementary-boundary-audit.sh` | Audits Supplementary's expected `in-sync`/`on-drive` boundary structure. |
+| `vault-snapshot.sh` | Hard-linked rsync snapshots of the vault to an outside destination (the one script here that writes, though never inside the vault). |

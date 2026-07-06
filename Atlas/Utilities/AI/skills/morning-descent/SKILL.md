@@ -28,7 +28,7 @@ as a daily practice. Three movements; only the middle one is this skill's job.
 
 1. `CLAUDE.md`, root `README.md`, root `AGENTS.md`
 2. `Efforts/Ongoing/The right-left-right approach.md`
-3. `Timeline/Plans/P1 Life goal.md` (top of the plan-scale ladder)
+3. The top note of the plan ladder under `Timeline/Plans/`, if one exists (see `Timeline/Plans/README.md`)
 4. `Atlas/Concepts/Personality of Iain McGilchrist.md` (voice for the returned brief)
 
 ## Step 1 — Get the waking reflection
@@ -46,13 +46,12 @@ as a daily practice. Three movements; only the middle one is this skill's job.
 
 Retrieve, in order:
 
-1. `Timeline/Plans/P1 Life goal.md` and its children (decade/year scale) via
-   the existing `plan-id`/`plan-scale` Dataview pattern already in use there.
+1. The plan ladder under `Timeline/Plans/` (top note and its children), if
+   one exists.
 2. Relevant `Efforts` control notes (the project-control-note pattern in
    `[[Second Brain Operating Model]]`) that resonate with what was said.
-3. Semantic + keyword retrieval (`second-brain` skill's Step 2) for anything
-   else the reflection touches, including candidates from the ~10-20 loose
-   `+/` threads the user is working through this month.
+3. Retrieval per the `second-brain` skill for anything else the reflection
+   touches, including candidates from any loose `+/` inbox threads in play.
 
 Cap the touch-list at **3-5 notes**. This is a morning-sized pass, not a lint
 sweep — the whole point is that the notes which matter get fixed because they
@@ -63,10 +62,10 @@ For each touched note, propose a specific small edit or link (per
 before writing — no exceptions, including when the fix looks obvious.
 
 **Extending the ladder:** if the reflection surfaces a month/week/day-scale
-commitment that has no plan note yet, propose creating one, following the
-exact `plan-id`/`plan-type`/`plan-scale`/Dataview-parent-child pattern in
-`Timeline/Plans/P1 Life goal.md`. Confirm before creating. The ladder fills in
-from what real mornings surface — do not backfill it speculatively.
+commitment that has no plan note yet, propose creating one, matching whatever
+parent-child pattern the existing ladder uses. Confirm before creating. The
+ladder fills in from what real mornings surface — do not backfill it
+speculatively.
 
 **Watch for mismatch:** if a choice the user makes here contradicts how a
 similar choice went on an earlier morning, name the earlier one and ask what
@@ -77,15 +76,15 @@ contradiction is a signal something is being missed, not noise).
 ## Step 3 — Return the brief
 
 The brief lives inside the DAILY note `Timeline/Timeline/YYYY-MM-DD.md` (date
-only, no time suffix). The user designed this format on 2026-07-06; follow it
-exactly (reference: `Timeline/Timeline/2026-07-06.md`):
+only, no time suffix). Follow the format exactly (scaffold:
+`Atlas/Utilities/Templates/Daily note scaffold.md`):
 
 - Frontmatter: only `created: YYYY-MM-DDTHH:mm` and `one-liner`. No
   created-date, no device, no subjective fields.
 - Top of note: the dataviewjs aggregator block that tables the day's
   timestamped capture notes (location/time/phy/men/emo/one-liner/body/link).
-  When creating a fresh daily note, copy this block verbatim from the most
-  recent existing daily note.
+  When creating a fresh daily note, copy this block from the scaffold
+  template (or the most recent existing daily note).
 - Then the phase block:
 
 ```
@@ -115,7 +114,7 @@ Content of the four sections, in the voice distilled in
 bullet-listed todos:
 
 - Direction: one or two sentences locating today in the larger arc, in the
-  user's own terms. Do NOT link [[P1 Life goal]] or other ladder notes by
+  user's own terms. Do NOT link the life-goal or other ladder notes by
   default; link only when the reflection itself demonstrates the connection.
 - This season: what the month/week actually holds (deadlines, meetings).
 - Where the work actually stands: the 3-5 notes this pass actually touched or
@@ -123,9 +122,9 @@ bullet-listed todos:
 - Held open: what surfaced but stays deliberately unresolved; name it as held,
   not as failure. The user works from this list during the day.
 
-Formatting rules (standing user preference, 2026-07-06): no em or en dashes
-anywhere (use commas, colons, parentheses); no hard line-wrapping, each
-paragraph is one line.
+Formatting rules (standing preference): no em or en dashes anywhere (use
+commas, colons, parentheses); no hard line-wrapping, each paragraph is one
+line.
 
 ## What this skill is not
 

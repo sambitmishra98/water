@@ -55,11 +55,11 @@ If a local rule appears to conflict with this file, flag it for human review.
 - Prefer preserving task context inside the relevant project or dated note.
 - Legacy `.copilot-context.md` files may provide local historical context, but durable governance should live in `README.md` and `AGENTS.md`.
 
-## Codex and shared LLM setup
+## Shared LLM setup (Claude, Codex, others)
 
-- When operating as Codex from the vault root, read `Atlas/Utilities/AI/AI Start Here.md` and `Atlas/Utilities/AI/Second Brain Retrieval Protocol.md` after the root `README.md` and `AGENTS.md` for vault-level retrieval, structure, or automation work.
-- Reusable AI skills belong in `Atlas/Utilities/AI/skills/`. Tool-specific folders such as `.claude/skills/` and `~/.codex/skills/` may symlink to those durable sources.
-- For vault retrieval, prefer the semantic search command in `Atlas/Utilities/AI/Second Brain Retrieval Protocol.md`; pair it with `rg --no-ignore-vcs` for proper nouns, exact phrases, paths, and governance/setup questions.
+- When operating from the vault root with any LLM tool, read `CLAUDE.md` after the root `README.md` and `AGENTS.md` for launch routing, the search cascade, and safety rules; it is tool-agnostic despite the name.
+- Reusable AI skills belong in `Atlas/Utilities/AI/skills/`. Tool-specific folders such as `.claude/skills/` (shipped as symlinks in this template) and `~/.codex/skills/` point to those durable sources.
+- For vault retrieval, use `rg --no-ignore-vcs` (see the search cascade in `CLAUDE.md`; the flag is mandatory because personal notes are gitignored by design). If you wire in semantic search under `Atlas/Utilities/AI/`, run it first and keep `rg` as the fallback for exact names and paths.
 - Do not treat `.claude`, `.codex`, caches, plugin folders, vendor folders, or software folders as governance. Promote durable workflow instructions into `Atlas/Utilities/AI` instead.
 
 ## Philosophical stance — the challenger mode
@@ -90,12 +90,10 @@ The exception: when the user is explicitly asking for retrieval only ("find me t
 
 ## Device and Git safety
 
-- Desktop and laptop may each have their own local `.git`.
-- Mobile has no Git and no development role.
-- Git is for local governance checkpoints, not whole-vault sync.
-- Obsidian Sync is the note sync layer.
-- Do not assume `.git` exists on every device.
-- Do not assume Git commits on one device appear on another through Obsidian Sync.
+- Every clone of this repository has its own `.git` tracking the framework only; personal notes are untracked by design.
+- Git distributes the framework (clone, pull for updates); it does not sync notes.
+- Choose your own note-sync layer if you need one (Obsidian Sync, Syncthing, manual transfer); mobile devices should capture and read, not develop.
+- Do not assume commits or notes on one device appear on another.
 - Never initialize Git, reset Git, or change `.gitignore` without explicit Vault Developer approval.
 - Before any Git operation, show `pwd`, `git status --short`, and the intended file list.
 - Never track the whole vault.
@@ -103,9 +101,9 @@ The exception: when the user is explicitly asking for retrieval only ("find me t
 - Do not track heavy, private, or raw material.
 - Do not track `.obsidian/workspace.json`, `.obsidian/workspaces.json`, `.llm-context`, `.trash`, or `Supplementary/in-sync`.
 
-## Obsidian Sync safety
+## Note-sync safety (when a sync tool is in use)
 
-- Obsidian Sync works per device and settings must be checked per device.
+- Sync tools work per device and settings must be checked per device.
 - Desktop and laptop may both have development capability.
 - Mobile is capture, read, and review only.
 - Heavy material from laptop first lands in `Supplementary/in-sync` only as temporary intake.
