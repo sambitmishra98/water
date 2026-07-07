@@ -23,10 +23,10 @@ Keyword search is the default. One flag is load-bearing:
 
     rg -i --no-ignore-vcs "<keywords>" . --glob "*.md" --glob "!Supplementary/**" --glob "!.obsidian/**" --glob "!.git/**" --glob "!.llm-context/**"
 
-`--no-ignore-vcs` is MANDATORY in this vault: the root .gitignore ignores
-everything by default (personal notes are untracked by design), and rg
-respects .gitignore, so without the flag rg silently finds nothing outside
-the template's own governance files.
+Always pass `--no-ignore-vcs`: personal notes are untracked by design (the
+root .gitignore ignores everything by default), and gitignore-aware tools
+can silently skip them. The flag makes search results independent of ignore
+rules.
 
 If you have wired semantic/embedding search into `Atlas/Utilities/AI/`, run
 it first and use the keyword search as the fallback for exact names, paths,

@@ -56,10 +56,10 @@ tooling installed):
 1. Keyword search:
    rg -i --no-ignore-vcs "<keywords>" . --glob "*.md" --glob "!Supplementary/**" --glob "!.git/**" --glob "!.llm-context/**"
 
-   --no-ignore-vcs is required. This vault's root .gitignore ignores
-   everything by default (personal notes are untracked by design), and rg
-   respects .gitignore, so without the flag rg silently finds only the
-   template's own governance files and none of the user's notes.
+   Always pass --no-ignore-vcs. Personal notes are untracked by design
+   (the root .gitignore ignores everything by default), and gitignore-aware
+   tools can silently skip them; the flag makes search results independent
+   of ignore rules across rg versions and future .gitignore edits.
 
 2. Governance check:
    read the nearest README.md and AGENTS.md for any folder being discussed.

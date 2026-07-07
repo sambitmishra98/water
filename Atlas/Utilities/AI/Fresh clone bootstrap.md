@@ -32,8 +32,8 @@ governance files are tracked. Two consequences:
 
 - Notes you write on this machine stay untracked. `git add -A` will not sweep
   them up, and `git push` cannot leak them. This is by design.
-- `rg` respects .gitignore, so all note searches need `--no-ignore-vcs` or
-  they silently return nothing (see the search cascade in `CLAUDE.md`).
+- Always search with `rg --no-ignore-vcs` so results never depend on ignore
+  rules (see the search cascade in `CLAUDE.md`).
 
 ## 3. Decide what happens to notes written here
 
